@@ -1,0 +1,123 @@
+/* Fuentes generales */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Agregado para que los elementos dentro del contenedor no se salgan */
+}
+
+h1 {
+    color: #333;
+    font-family: 'Lora', serif;
+}
+
+#timer {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #444;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7675;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.controls button:hover {
+    background-color: #d63031;
+}
+
+/* Mensaje personalizado con fuente profesional */
+#personal-message {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+    word-wrap: break-word; /* Para evitar que el texto se desborde */
+    max-width: 100%; /* Limita el mensaje al ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no haga que el mensaje se salga */
+    margin-bottom: 0; /* Asegura que no haya espacio extra en la parte inferior */
+}
+
+/* Estilos del popup (ya no se utiliza) */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambiar el tamaño de la imagen del tomate para móviles */
+    #tomato-image {
+        width: 60px;
+    }
+
+    /* Asegurarse de que los botones de control no se amontonen */
+    .controls button {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    /* Ajustar la posición de los elementos en pantallas pequeñas */
+    .container {
+        padding: 10px;
+    }
+
+    #personal-message {
+        font-size: 16px; /* Ajustar tamaño de fuente en móvil */
+        margin-top: 10px;
+    }
+}

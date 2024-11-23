@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MarinaDoro Pomodoro</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Tomate" id="tomato-image">
+      
+        <div id="timer">25:00</div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <button id="complete">Completar Pomodoro</button>
+            <button id="toggle-stats">Ver estadísticas</button>
+        </div>
+        <div id="statistics" style="display: none;">
+            <h2>Estadísticas</h2>
+            <p>Pomodoros diarios: <span id="daily-pomodoros">0</span></p>
+            <p>Pomodoros semanales: <span id="weekly-pomodoros">0</span></p>
+            <p>Pomodoros mensuales: <span id="monthly-pomodoros">0</span></p>
+            <p>Pomodoros anuales: <span id="yearly-pomodoros">0</span></p>
+        </div>
+
+        <!-- Mensaje en la parte inferior con la fuente Lora, dentro del contenedor -->
+        <p id="personal-message">
+            Marina, este temporizador Pomodoro te lo ha hecho tu amor para que gestiones tu tiempo de estudio a la perfección y no te agobies más de lo necesario. Te quiero!!!
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
